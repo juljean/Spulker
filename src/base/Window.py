@@ -7,4 +7,3 @@ class Window(qtw.QWidget):
 
 
         self.show()
-

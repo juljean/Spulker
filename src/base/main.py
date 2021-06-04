@@ -1,4 +1,7 @@
-from base.Window import Window
+from base.Window import *
 
 if __name__ == '__main__':
-    a=0
+    app = qtw.QApplication([])
+    mw = MainWindow()
+    app.exec_()
+
