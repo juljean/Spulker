@@ -45,3 +45,28 @@ class CMonth(TimeContainer):
 class CYear(TimeContainer):
     def __init__(self, events, startDate):
         super().__init__(startDate, events)
+
+class CTag:
+    def __init__(self, name):
+        self.name = name
+
+class CPerson:
+    def __init__(self, id: int, photo,
+                 birthdayDate: datetime.date,
+                 phoneNumber, phoneNumberComment: str,
+                 email: str, address: str,
+                 relationshipLevel: int,
+                 familyMember: CDay.CPerson,
+                 ):
+        self.id = id
+        self.photo = photo
+
+
+class CName:
+    def __init__(self, name: str, surname: str, secondName: str):
+        self.name = name
+        self.surname = surname
+        self.secondName = secondName
+
+#make a height parameter
+
